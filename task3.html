@@ -1,0 +1,60 @@
+{% extends 'base.html' %}
+{% block body %}
+
+<font color="white" class="sections">
+   <div class="data">
+      {% if data: %}
+      <table border="1" cellpadding="5" cellspacing="5">
+         <tr>
+            {% for col in data.columns %}
+            <th> {{ col }} </th>
+            {% endfor %}
+         </tr>
+
+         {% for raw in data.raws %}
+         <tr>
+            {% for val in raw %}
+            <td>{{ val }}</td>
+            {% endfor %}
+         </tr>
+         {% endfor %}
+      </table>
+
+      {% endif %}
+   </div>
+
+
+   <form method="post" class="container" action="/task3" autocomplete="off" enctype="multipart/form-data">
+      <fieldset>
+         <legend>Data Description:</legend>
+
+         <input type="radio" name="dc" value="1">
+         <lable for="1">Show the properties of each column</lable><br><br>
+
+         <input type="radio" name="dc" value="2">
+         <lable for="2">Show the properties of specific column</lable>
+        
+         <select name="text" id="text" value="">
+            {% for col in data.columns %}
+            <option value="{{ col }}">{{ col }}</option>
+            {% endfor %}
+         </select>
+         <br><br>
+
+         <input type="radio" name="dc" value="3">
+         
+         <lable for="1">Show the data set</lable><br><br>
+
+         <input type="submit" value="Submit">
+
+         <form>
+            <input type="button" value="Go back!" onclick="history.back()">
+            <button><a href="http://127.0.0.1:5000/task2">Task Page</a></button>
+         </form>
+
+      </fieldset>
+   </form>
+
+</font>
+
+{% endblock body %}

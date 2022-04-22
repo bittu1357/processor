@@ -1,0 +1,37 @@
+{% extends 'base.html' %}
+{% block body %}
+<font color="white">
+
+   <h2>
+      <center>Choose The Below Options For Data PreProcessing</center>
+   </h2>
+
+
+   <form method="post" class="container" action="/task3" autocomplete="off" enctype="multipart/form-data">
+      <input type="submit" value="Data Description">
+   </form>
+   <br>
+
+   <form method="post" class="container" action="/task4" autocomplete="off" enctype="multipart/form-data">
+      <input type="submit" value="Handling NULL Values">
+   </form>
+   <br>
+
+   <form method="post" class="container" action="/task5" autocomplete="off" enctype="multipart/form-data">
+      <input type="submit" value="Encoding Categorical Data">
+   </form>
+   <br>
+
+   <form method="post" class="container" action="/task6" autocomplete="off" enctype="multipart/form-data">
+      <input type="submit" value="Feature Scaling">
+   </form>
+   <br>
+
+   <form method="post" class="container" action="/task7" autocomplete="off" enctype="multipart/form-data">
+      <input type="submit" value="Download the dataset">
+   </form>
+
+
+
+</font>
+{% endblock body %}
