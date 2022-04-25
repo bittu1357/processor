@@ -1,0 +1,8 @@
+{% extends 'base.html' %}
+{% block body %}
+<form method="post" class="container" id="con" action="/task1" autocomplete="off" enctype="multipart/form-data">
+  <input type="file" name="file" ,
+    accept=".csv, application/vnd.openxmlformats-officedocument.spreadsheetml.sheet, application/vnd.ms-excel">
+  <input type="submit" value="Submit">
+</form>
+{% endblock body %}
