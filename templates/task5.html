@@ -1,0 +1,58 @@
+{% extends 'base.html' %}
+{% block body %}
+
+<font color="white" class="sections">
+    <div class="data">
+        {% if data: %}
+        <table border="1" cellpadding="5" cellspacing="5">
+            <tr>
+                {% for col in data.columns %}
+                <th> {{ col }} </th>
+                {% endfor %}
+            </tr>
+
+            {% for raw in data.raws %}
+            <tr>
+                {% for val in raw %}
+                <td>{{ val }}</td>
+                {% endfor %}
+            </tr>
+            {% endfor %}
+        </table>
+
+        {% endif %}
+    </div>
+
+
+    <div class="section1">
+        <h2>
+            <center>Encoding Categorical Data</center>
+        </h2>
+        <fieldset>
+            <form method="post" class="container" action="/task5" autocomplete="off" enctype="multipart/form-data">
+
+                <legend>
+                    <p>Show the Categorical Columns</p>
+                    <input name="submit" type="submit" value="Submit">
+                    <br><br>
+
+                    <p>Select Column To Perform OneHotEncoding</p>
+                    <select name="task">
+                        {% for col in data.c1 %}
+                        <option value="{{ col }}">{{ col }}</option>
+                        {% endfor %}
+                    </select>
+                    <input name="submit" type="submit" value="Submit1">
+                    <br><br>
+                    <input type="button" value="Go back!" onclick="history.back()">
+                    <button><a href="http://127.0.0.1:5000/task2">Task Page</a></button>
+                    
+                </legend>
+            </form>
+        </fieldset>
+    </div>
+
+</font>
+
+
+{% endblock body %}

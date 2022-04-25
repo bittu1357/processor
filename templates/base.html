@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title> Pre-Processor</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+    <style>
+        body {
+            background-image: url('static/dark.png');
+            background-size:100%;
+            background-repeat: no-repeat;
+            margin: 0
+        }
+    </style>
+</head>
+
+<body>
+    <!-- <div id="particles-js"> -->
+    <nav>
+        <ul>
+            <li><a href="http://127.0.0.1:5000/home">Home</a></li>
+            <li><a href="http://127.0.0.1:5000/features">Features</a></li>
+            <div class="dropdown">
+                <li><a href="#">Follow Us</a></li>
+                <div class="dropdown-content">
+                    <li><a href="https://www.twitter.com/">Twitter</a></li>
+                    <li><a href="https://www.linkedin.com/">Linked In</a></li>
+                    <li><a href="https://www.instagram.com/">Instagram</a></li>
+                </div>
+            </div>
+        </ul>
+    </nav>
+
+    {% block body %}
+
+    {% endblock body %}
+    <style>
+        .container {
+            position: relative;
+        }
+
+        .main {
+            background-position: center top;
+            min-height: 602px;
+            background-size: cover;
+            background-repeat: no-repeat
+        }
+
+        .footer {
+            position: absolute;
+            bottom: 0;
+            width: 100vw;
+            font-family: sans-serif;
+            font-size: 24px;
+            color: white;
+            height: 80px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: black;
+            opacity: 0.6;
+        }
+    </style>
+    <div class="container">
+        <div class="main"></div>
+        <div class="footer">
+            This website devloped by <b>&nbsp;SIDDHANT SHAH</b>.
+        </div>
+
+</body>
+
+</html>

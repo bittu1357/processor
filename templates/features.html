@@ -1,0 +1,123 @@
+{% extends 'base.html' %}
+{% block body %}
+
+<h2 style="color:blue;">In this section you will find how to perform preprocessing on this application.</h2>
+<p>
+<h2>
+    <font color="white">
+
+        This application is for data Preprocessing. Here user upload your data set wich you want to perform
+        preprocessing on it.<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;In this application you will find features like,<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1.&nbsp;&nbsp;Data Description<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2.&nbsp;&nbsp;Handling Null Values<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3.&nbsp;&nbsp;Encoding Categorical Columns<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;4.&nbsp;&nbsp;Feature Scaling<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;5.&nbsp;&nbsp;Download the pre-processed data set<br>
+    </font>
+</h2>
+</p>
+
+
+<p>
+    <font color="white">
+        <h1>
+            <font color="Blue">1. Data Description</font>
+        </h1>
+        <h2>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; In Data Description user will find three options <br><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1. Show the properties of each column:<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;In
+            this option user can see the properties of each column like, count, unique values, mean value, most freq
+            value, etc.<br><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2. Show the properties of specific column<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;In
+            this option user can see the properties for perticular column.<br><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3. Show the data set<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;In
+            this option user can see the whole data set.<br><br>
+        </h2>
+    </font>
+</p>
+
+<p>
+    <font color="white">
+        <h1>
+            <font color="Blue">2. Handling Null Values</font>
+        </h1>
+        <h2>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; In Handling Null Values user will find three options <br><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1. Remove/Delete column:<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;In
+            this option user can delete or remove the perticular column by selecting column name from drop down
+            menu.<br><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2. Show the numbers of null values<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;In
+            this option user can see total number of null values all columns.<br><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3. Fill null Values<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;In
+            this option user can fill the null values with mean or median or mode by selecting column from the drop down
+            menu.<br><br>
+        </h2>
+    </font>
+</p>
+
+<p>
+    <font color="white">
+        <h1>
+            <font color="Blue">3. Encoding Categorical Columns</font>
+        </h1>
+        <h2>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; In Encoding Categorical Columns user will find two options <br><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1. Show the Categorical Columns:<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;In
+            this option user can see the how many numbers of caltegorical columns and its unique values.<br><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2. Select Column To Perform OneHotEncoding<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            In this option user selects the Categorical column name to performe the One-Hot-Encoading operation
+            .<br><br>
+        </h2>
+    </font>
+</p>
+
+<p>
+    <font color="white">
+        <h1>
+            <font color="Blue">4. Feature Scaling</font>
+        </h1>
+        <h2>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; In Feature Scaling user will find four options <br><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1. Perform Nornalization (MinMax Scaler) For A Whole
+            Datase:<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;In
+            this option user can apply Normalization using MinMax-Scaler for whole dataset.<br><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2. Perform Nornalization (MinMax Scaler) For A
+            particular Column<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;In
+            this option user can apply Normalization using MinMax-Scaler for perticular column of dataset.<br><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3. Perform Standardization(Standard Scaler) For Whole
+            Data Set<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;In
+            this option user can apply Standardization using Standerd-Scaler for whole dataset.<br><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;4. Perform Standardization(Standard Scaler) For A
+            particular Column<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;In
+            this option user can apply Standardization using Standerd-Scaler for perticular column of dataset.<br><br>
+        </h2>
+    </font>
+</p>
+
+<p>
+    <font color="white">
+        <h1>
+            <font color="Blue">5. Download the pre-processed data set</font>
+        </h1>
+        <h2>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; By selecting this option user can download pre-processed
+            dataset.<br><br>
+        </h2>
+    </font>
+</p>
+
+
+{% endblock body %}

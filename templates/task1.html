@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+{% block body %}
+<font color="white">
+  <h2>
+    <center> Choose The Target Column To Remove</center>
+  </h2>
+  <form method="post" class="container" id="con" action="/task2" autocomplete="off" enctype="multipart/form-data">
+    <select name="text" id="text" value="">
+      {% for col in data.columns %}
+      <option value="{{ col }}">{{ col }}</option>
+      {% endfor %}
+    </select> <input name='submit' type="submit" value="Submit"> 
+    <input name='submit' type="submit" value="Next">
+  </form>
+</font>
+
+{% endblock body %}
